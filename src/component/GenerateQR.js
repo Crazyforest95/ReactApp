@@ -29,7 +29,9 @@ class QR_generator extends Component {
                         </Col>
                         <Col xs={5} className="QR_area">
                             <p>The Place name:</p>
-                            <QRCode style={{width:'70%',height:"auto"}} value={this.state.jsonData} />
+                            {/* <br /> */}
+                            <p>{localStorage.getItem('StoreName')}</p>
+                            <QRCode style={{ width: '70%', height: "auto" }} value={this.state.jsonData} />
                             <p>UNIQUE ID:</p>
                         </Col>
                         <Col className="QR_button">

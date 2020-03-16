@@ -12,6 +12,7 @@
 .QR_generator .QR_area{
     border: 1px solid black;
     height: 70vh;
+    padding-top: 5%;
 }
 
 .QR_generator .generate{

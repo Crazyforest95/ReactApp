@@ -51,6 +51,7 @@ class Inputpage extends Component {
         if (form.checkValidity() === true) {
             event.preventDefault()
             this.props.history.push('/secondPage')
+            window.location.reload(false)
         }
         await this.setState({ validated: true })
         localStorage.setItem('Email', this.state.Email)
@@ -83,6 +84,8 @@ class Inputpage extends Component {
                         <Form.Label>Please insert the location of the store:</Form.Label>
                         <Form.Control required onChange={this.onChangeStoreLocation} className="input_field" />
                     </Form.Group>
+                    <Form.Label>Please click on the exact address:</Form.Label>
+
                     {/* <Form.Group className="passwordgroup" as={Col} controlId="validationCustom04" className="input_area">
                         <Form.Label>Please click on the exact address:</Form.Label>
                         <Form.Control required onChange={this.onChangeLocation} className="input_field" />
