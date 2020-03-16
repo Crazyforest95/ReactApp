@@ -17,8 +17,8 @@ class Inputpage extends Component {
             message: '',
             b_message: false,
             center: {
-                lat: 0,
-                lng: 0,
+                lat: 31.0461,
+                lng: 34.8516,
             },
             zoom: 11
 
